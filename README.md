@@ -44,6 +44,8 @@ aws configure
 aws eks update-kubeconfig --region us-east-1 --name juice-shop-cluster
 ```
 
+configure using ACG values, us-east-1 and json
+
 Add the secret
 ```
 kubectl create secret generic insights-secret --from-literal=snykServiceAccountToken=YOUR_SNYK_TOKEN
